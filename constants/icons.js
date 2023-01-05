@@ -23,6 +23,13 @@ export const basket = require("../assets/icons/shopping-basket.png");
 export const star = require("../assets/icons/star.png");
 export const sushi = require("../assets/icons/sushi.png");
 export const user = require("../assets/icons/user.png");
+//
+export const cloud = require("../assets/icons/cloud.png");
+export const energy = require("../assets/icons/energy.png");
+export const house = require("../assets/icons/house.png");
+export const pole = require("../assets/icons/pole.png");
+export const solarcell = require("../assets/icons/solarcell.png");
+
 
 export default {
     back,
@@ -50,4 +57,10 @@ export default {
     star,
     sushi,
     user,
+    //
+    cloud,
+    energy,
+    house,
+    pole,
+    solarcell,
 }

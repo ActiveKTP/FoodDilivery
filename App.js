@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createStackNavigator } from "@react-navigation/stack";
+//import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from '@react-navigation/native'
 import { useFonts } from 'expo-font';
 
@@ -9,7 +9,9 @@ import { useFonts } from 'expo-font';
 import { Restaurant, OrderDelivery } from './screens'
 import Tabs from './navigation/tabs'
 
-const Stack = createStackNavigator();
+import StackNavigation from './StackNavigation';
+
+//const Stack = createStackNavigator();
 
 const App = () => {
 
@@ -27,16 +29,7 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerShown: false
-        }}
-        initialRouteName={'Home'}
-      >
-        <Stack.Screen name="Home" component={Tabs} />
-        <Stack.Screen name="Restaurant" component={Restaurant} />
-        <Stack.Screen name="OrderDelivery" component={OrderDelivery} />
-      </Stack.Navigator>
+      <StackNavigation />
     </NavigationContainer>
   )
 
